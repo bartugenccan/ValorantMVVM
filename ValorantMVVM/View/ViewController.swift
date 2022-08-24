@@ -14,6 +14,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     private var agentViewModel: AgentViewModel!
     
+    var chosenAgent: SingleAgentViewModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -51,22 +53,38 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let singleAgentViewModel = self.agentViewModel.agentAtIndex(indexPath.row)
         let imageUrl = URL(string: singleAgentViewModel.agentImage)
-        
-        let gradient = CAGradientLayer()
-        gradient.frame = cell.bounds
-        gradient.colors = [
-            UIColor(named: "#\(singleAgentViewModel.agentColors[0])"),
-            UIColor(named: "#\(singleAgentViewModel.agentColors[1])")
-        ]
-        cell.layer.addSublayer(gradient)
+
         
         cell.agentImage.kf.setImage(with: imageUrl)
         cell.agentImage.layer.masksToBounds = true
         
         cell.agentLabel.text = singleAgentViewModel.agentName
-        cell.agentLabel.font = UIFont(name: "Valorant-Font", size: 15)
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        chosenAgent = agentViewModel.agentAtIndex(indexPath.row)
+        tableView.deselectRow(at: indexPath, animated: true)
+        performSegue(withIdentifier: "toAgentDetail", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toAgentDetail" {
+            let destinationVC = segue.destination as! AgentDetailViewController
+            
+            let imageUrl = URL(string: chosenAgent!.agentPortrait)!
+            let data = try? Data(contentsOf: imageUrl)
+            
+            
+            
+            destinationVC.selectedAgentName = chosenAgent!.agentName
+            if let imageData = data {
+                let image = UIImage(data: imageData)
+                destinationVC.selectedAgentImage = image!
+            }
+            destinationVC.selectedAgentDescription = chosenAgent!.agentDescription
+        }
     }
 }
 

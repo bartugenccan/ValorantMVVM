@@ -38,4 +38,12 @@ struct SingleAgentViewModel {
     var agentColors: [String] {
         return self.singleAgent.backgroundGradientColors
     }
+    
+    var agentPortrait: String {
+        return self.singleAgent.fullPortrait!
+    }
+    
+    var agentDescription: String {
+        return self.singleAgent.datumDescription
+    }
 }

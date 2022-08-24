@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C6EFBA128B6AC370012B096 /* AgentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6EFBA028B6AC370012B096 /* AgentDetailViewController.swift */; };
 		2C8BBCAC28B2D2CD00C03E0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BBCAB28B2D2CD00C03E0B /* AppDelegate.swift */; };
 		2C8BBCAE28B2D2CD00C03E0B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BBCAD28B2D2CD00C03E0B /* SceneDelegate.swift */; };
 		2C8BBCB028B2D2CD00C03E0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BBCAF28B2D2CD00C03E0B /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C6EFBA028B6AC370012B096 /* AgentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDetailViewController.swift; sourceTree = "<group>"; };
 		2C8BBCA828B2D2CD00C03E0B /* ValorantMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValorantMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C8BBCAB28B2D2CD00C03E0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C8BBCAD28B2D2CD00C03E0B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				2C8BBCAF28B2D2CD00C03E0B /* ViewController.swift */,
 				2C8BBCB128B2D2CD00C03E0B /* Main.storyboard */,
 				2C8BBCC328B2D3FC00C03E0B /* ValorantTableViewCell.swift */,
+				2C6EFBA028B6AC370012B096 /* AgentDetailViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				2C8BBCC828B2D5C100C03E0B /* WebService.swift in Sources */,
 				2C8BBCC628B2D54B00C03E0B /* AgentModel.swift in Sources */,
 				2C8BBCC428B2D3FC00C03E0B /* ValorantTableViewCell.swift in Sources */,
+				2C6EFBA128B6AC370012B096 /* AgentDetailViewController.swift in Sources */,
 				2C8BBCCA28B2D94C00C03E0B /* AgentViewModel.swift in Sources */,
 				2C8BBCB028B2D2CD00C03E0B /* ViewController.swift in Sources */,
 				2C8BBCAC28B2D2CD00C03E0B /* AppDelegate.swift in Sources */,
