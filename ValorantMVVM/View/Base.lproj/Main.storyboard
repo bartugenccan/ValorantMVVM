@@ -176,44 +176,101 @@
                     <connections>
                         <segue destination="tRI-aC-Fzr" kind="relationship" relationship="viewControllers" id="VO1-7D-4Z4"/>
                         <segue destination="rw3-oF-cmi" kind="relationship" relationship="viewControllers" id="Cz7-RJ-OIA"/>
-                        <segue destination="3U2-Lx-otF" kind="relationship" relationship="viewControllers" id="wN3-Bt-47X"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="giq-uD-4jl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-433" y="-1091"/>
         </scene>
-        <!--Item-->
+        <!--Weapons-->
         <scene sceneID="tyf-cz-HBU">
             <objects>
                 <navigationController id="rw3-oF-cmi" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="M4y-SY-nli"/>
+                    <tabBarItem key="tabBarItem" title="Weapons" image="wave.3.backward" catalog="system" id="M4y-SY-nli"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="21l-jI-FTd">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="WvG-0S-edY" kind="relationship" relationship="rootViewController" id="LY8-xl-796"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zU2-Pj-H6H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-433" y="-389"/>
         </scene>
-        <!--Item-->
-        <scene sceneID="Rzq-ct-q4w">
+        <!--Weapon View Controller-->
+        <scene sceneID="aEV-LV-3F7">
             <objects>
-                <navigationController id="3U2-Lx-otF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="7mz-ff-VJT"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NMu-8K-5Ql">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="b5i-ce-4hP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="WvG-0S-edY" customClass="WeaponViewController" customModule="ValorantMVVM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BHt-d9-XYt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="IaI-A5-zdp">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WeaponCell" rowHeight="228" id="fO5-2J-swc" customClass="WeaponTableViewCell" customModule="ValorantMVVM" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="228"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fO5-2J-swc" id="eYr-at-CQs">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="228"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pEa-Rc-6Mg">
+                                                    <rect key="frame" x="86" y="18" width="242" height="128"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVv-8W-7Io">
+                                                    <rect key="frame" x="20" y="180" width="374" height="48"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="48" id="kFG-x7-2S1"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="VALORANT-Regular" family="VALORANT" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="NVv-8W-7Io" secondAttribute="bottom" constant="-11" id="ISv-0r-QEB"/>
+                                                <constraint firstItem="NVv-8W-7Io" firstAttribute="leading" secondItem="eYr-at-CQs" secondAttribute="leadingMargin" id="Kp2-N8-Jge"/>
+                                                <constraint firstItem="pEa-Rc-6Mg" firstAttribute="top" secondItem="eYr-at-CQs" secondAttribute="topMargin" constant="7" id="MOD-XV-i9a"/>
+                                                <constraint firstItem="NVv-8W-7Io" firstAttribute="top" secondItem="pEa-Rc-6Mg" secondAttribute="bottom" constant="34" id="Zpg-qt-IPu"/>
+                                                <constraint firstItem="NVv-8W-7Io" firstAttribute="trailing" secondItem="eYr-at-CQs" secondAttribute="trailingMargin" id="fOV-4Q-Q00"/>
+                                                <constraint firstItem="pEa-Rc-6Mg" firstAttribute="centerX" secondItem="NVv-8W-7Io" secondAttribute="centerX" id="fRn-ih-3EC"/>
+                                                <constraint firstItem="pEa-Rc-6Mg" firstAttribute="leading" secondItem="eYr-at-CQs" secondAttribute="leadingMargin" constant="66" id="iMF-Ya-a7n"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="NVv-8W-7Io" id="aYR-kN-zud"/>
+                                            <outlet property="weaponImageView" destination="pEa-Rc-6Mg" id="51j-dg-yCR"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="e4N-9c-PMO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IaI-A5-zdp" firstAttribute="top" secondItem="e4N-9c-PMO" secondAttribute="top" id="BvE-BO-int"/>
+                            <constraint firstItem="e4N-9c-PMO" firstAttribute="trailing" secondItem="IaI-A5-zdp" secondAttribute="trailing" id="FIl-c9-KpP"/>
+                            <constraint firstItem="IaI-A5-zdp" firstAttribute="leading" secondItem="e4N-9c-PMO" secondAttribute="leading" id="KqV-Xr-TUg"/>
+                            <constraint firstItem="e4N-9c-PMO" firstAttribute="bottom" secondItem="IaI-A5-zdp" secondAttribute="bottom" id="VAo-oF-KPD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uNG-ly-bJ8"/>
+                    <connections>
+                        <outlet property="tableView" destination="IaI-A5-zdp" id="Cvi-IT-maE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5V4-H7-0TM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="504" y="-396"/>
+            <point key="canvasLocation" x="-433.33333333333337" y="355.58035714285711"/>
         </scene>
     </scenes>
     <resources>
         <image name="person.3.fill" catalog="system" width="128" height="61"/>
+        <image name="wave.3.backward" catalog="system" width="83" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

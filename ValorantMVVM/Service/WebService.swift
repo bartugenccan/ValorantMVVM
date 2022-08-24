@@ -25,4 +25,19 @@ class WebService {
         }.resume()
     }
     
+    func fetchWeapons(url:URL, completion: @escaping (Weapons?) -> ()) {
+        
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            if let error = error {
+                print(error.localizedDescription)
+                completion(nil)
+            } else if let data = data {
+                let weaponList = try? JSONDecoder().decode(Weapons.self, from: data)
+                
+                if let weaponList = weaponList {
+                    completion(weaponList)
+                }
+            }
+        }.resume()
+    }
 }

@@ -20,6 +20,10 @@
 		2C8BBCCA28B2D94C00C03E0B /* AgentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BBCC928B2D94C00C03E0B /* AgentViewModel.swift */; };
 		2C8BBCCD28B2DDF800C03E0B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2C8BBCCC28B2DDF800C03E0B /* Kingfisher */; };
 		2C8BBCD128B2E06F00C03E0B /* Valorant-Font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C8BBCCF28B2E02B00C03E0B /* Valorant-Font.ttf */; };
+		2C9A1EBF28B6CCBF007A1B51 /* WeaponModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9A1EBE28B6CCBF007A1B51 /* WeaponModel.swift */; };
+		2C9A1EC128B6DA58007A1B51 /* WeaponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9A1EC028B6DA58007A1B51 /* WeaponViewController.swift */; };
+		2C9A1EC528B6DB5E007A1B51 /* WeaponTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9A1EC428B6DB5E007A1B51 /* WeaponTableViewCell.swift */; };
+		2C9A1EC728B6DC67007A1B51 /* WeaponViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9A1EC628B6DC67007A1B51 /* WeaponViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,10 @@
 		2C8BBCC728B2D5C100C03E0B /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		2C8BBCC928B2D94C00C03E0B /* AgentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentViewModel.swift; sourceTree = "<group>"; };
 		2C8BBCCF28B2E02B00C03E0B /* Valorant-Font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Valorant-Font.ttf"; sourceTree = "<group>"; };
+		2C9A1EBE28B6CCBF007A1B51 /* WeaponModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponModel.swift; sourceTree = "<group>"; };
+		2C9A1EC028B6DA58007A1B51 /* WeaponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponViewController.swift; sourceTree = "<group>"; };
+		2C9A1EC428B6DB5E007A1B51 /* WeaponTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponTableViewCell.swift; sourceTree = "<group>"; };
+		2C9A1EC628B6DC67007A1B51 /* WeaponViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				2C8BBCC528B2D54B00C03E0B /* AgentModel.swift */,
+				2C9A1EBE28B6CCBF007A1B51 /* WeaponModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -107,6 +116,8 @@
 				2C8BBCB128B2D2CD00C03E0B /* Main.storyboard */,
 				2C8BBCC328B2D3FC00C03E0B /* ValorantTableViewCell.swift */,
 				2C6EFBA028B6AC370012B096 /* AgentDetailViewController.swift */,
+				2C9A1EC028B6DA58007A1B51 /* WeaponViewController.swift */,
+				2C9A1EC428B6DB5E007A1B51 /* WeaponTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -115,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				2C8BBCC928B2D94C00C03E0B /* AgentViewModel.swift */,
+				2C9A1EC628B6DC67007A1B51 /* WeaponViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -205,10 +217,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C9A1EC128B6DA58007A1B51 /* WeaponViewController.swift in Sources */,
+				2C9A1EC528B6DB5E007A1B51 /* WeaponTableViewCell.swift in Sources */,
+				2C9A1EC728B6DC67007A1B51 /* WeaponViewModel.swift in Sources */,
 				2C8BBCC828B2D5C100C03E0B /* WebService.swift in Sources */,
 				2C8BBCC628B2D54B00C03E0B /* AgentModel.swift in Sources */,
 				2C8BBCC428B2D3FC00C03E0B /* ValorantTableViewCell.swift in Sources */,
 				2C6EFBA128B6AC370012B096 /* AgentDetailViewController.swift in Sources */,
+				2C9A1EBF28B6CCBF007A1B51 /* WeaponModel.swift in Sources */,
 				2C8BBCCA28B2D94C00C03E0B /* AgentViewModel.swift in Sources */,
 				2C8BBCB028B2D2CD00C03E0B /* ViewController.swift in Sources */,
 				2C8BBCAC28B2D2CD00C03E0B /* AppDelegate.swift in Sources */,
