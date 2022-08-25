@@ -73,17 +73,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if segue.identifier == "toAgentDetail" {
             let destinationVC = segue.destination as! AgentDetailViewController
             
-            let imageUrl = URL(string: chosenAgent!.agentPortrait)!
-            let data = try? Data(contentsOf: imageUrl)
+            destinationVC.selectedAgent = chosenAgent
             
-            
-            
-            destinationVC.selectedAgentName = chosenAgent!.agentName
-            if let imageData = data {
-                let image = UIImage(data: imageData)
-                destinationVC.selectedAgentImage = image!
-            }
-            destinationVC.selectedAgentDescription = chosenAgent!.agentDescription
         }
     }
 }

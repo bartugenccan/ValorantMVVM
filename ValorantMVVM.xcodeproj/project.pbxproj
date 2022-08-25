@@ -24,6 +24,8 @@
 		2C9A1EC128B6DA58007A1B51 /* WeaponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9A1EC028B6DA58007A1B51 /* WeaponViewController.swift */; };
 		2C9A1EC528B6DB5E007A1B51 /* WeaponTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9A1EC428B6DB5E007A1B51 /* WeaponTableViewCell.swift */; };
 		2C9A1EC728B6DC67007A1B51 /* WeaponViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9A1EC628B6DC67007A1B51 /* WeaponViewModel.swift */; };
+		2CAF973F28B7A1590006DDC5 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF973E28B7A1590006DDC5 /* FavoritesViewController.swift */; };
+		2CAF974128B7A2E70006DDC5 /* FavoriteAgentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF974028B7A2E70006DDC5 /* FavoriteAgentTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		2C9A1EC028B6DA58007A1B51 /* WeaponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponViewController.swift; sourceTree = "<group>"; };
 		2C9A1EC428B6DB5E007A1B51 /* WeaponTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponTableViewCell.swift; sourceTree = "<group>"; };
 		2C9A1EC628B6DC67007A1B51 /* WeaponViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponViewModel.swift; sourceTree = "<group>"; };
+		2CAF973E28B7A1590006DDC5 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		2CAF974028B7A2E70006DDC5 /* FavoriteAgentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteAgentTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,8 @@
 				2C6EFBA028B6AC370012B096 /* AgentDetailViewController.swift */,
 				2C9A1EC028B6DA58007A1B51 /* WeaponViewController.swift */,
 				2C9A1EC428B6DB5E007A1B51 /* WeaponTableViewCell.swift */,
+				2CAF973E28B7A1590006DDC5 /* FavoritesViewController.swift */,
+				2CAF974028B7A2E70006DDC5 /* FavoriteAgentTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -217,6 +223,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CAF974128B7A2E70006DDC5 /* FavoriteAgentTableViewCell.swift in Sources */,
+				2CAF973F28B7A1590006DDC5 /* FavoritesViewController.swift in Sources */,
 				2C9A1EC128B6DA58007A1B51 /* WeaponViewController.swift in Sources */,
 				2C9A1EC528B6DB5E007A1B51 /* WeaponTableViewCell.swift in Sources */,
 				2C9A1EC728B6DC67007A1B51 /* WeaponViewModel.swift in Sources */,
